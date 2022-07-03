@@ -1,0 +1,17 @@
+self
+------
+It is the instance(object) of the class. Through this can access variable and method of the class.
+If there are no self argument, it can not hold the information of the object.
+
+init
+------
+It is known as constructor. It initiates the data members of the class and called when object is created.
+
+def __init__(self):
+
+2 types of constructor
+1. default constructor - it doesn't accept any argument. It has ref to the instance being constructed (self).
+------------------------
+2. parametrise constructor - It contains parameters from the developer contain ref to the instance (self)
+def __init__(self, a, b):
+------------------------
