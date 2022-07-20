@@ -1,3 +1,38 @@
+'''
+One such practical scenario is contract between the Banks to perform fund / message transfer. The information has to be confidential and each bank might use its own encryption & decryption techniques. The Reserve Bank might setup an Interface giving the method names and not worrying about the implementation. 
+ 
+1. Create an interface BankTransfers
+
+2. Add two methods with the following prototype    
+
+   -- public String encrypt(String a);  
+
+   -- public String decrypt(String a);
+
+3. Create class ICICI which implements the BankTransfers Interface & implement a simple encryption technique.
+
+4. Create class HDFC which implements the BankTransfers Interface & implement a simple encryption technique.
+
+5. Encrypt technique followed by both banks:
+
+      ICICI - add 1 with the ASCII value of the character and insert number '1' after every character.
+
+      HDFC - add 1 with the ASCII value of the character in the even Index and subtract 1 with the ASCII value of the character in the odd Index .It does not encrypt the space.
+
+      The reverse of both will be decrept message (i.e original text)
+
+Input Description:
+Select a Bank Type the user name
+
+Output Description:
+Output should have a Encrypted input
+
+Sample Input :
+1 welcome all
+Sample Output :
+x1f1m1d1p1n1f1!1b1m1m1
+'''
+
 from abc import ABC, abstractmethod
 
 
